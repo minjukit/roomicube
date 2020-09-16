@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:ignore="LabelFor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/createAcc"
+        android:textColor="@color/dark_taupe_two"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/fullName"
+        android:textColor="@color/silver_two"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/signName"
+        android:textCursorDrawable="@color/dark_taupe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:backgroundTint = "@color/silver_two"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/warm_grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textFullName"
+        app:layout_constraintStart_toStartOf="@+id/textFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textFullName" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/email"
+        android:textColor="@color/silver_two"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signName" />
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:textCursorDrawable="@color/dark_taupe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint = "@color/silver_two"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/warm_grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pwd"
+        android:textColor="@color/silver_two"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/signEmail"
+        app:layout_constraintStart_toStartOf="@+id/signEmail"
+        app:layout_constraintTop_toBottomOf="@+id/signEmail" />
+
+    <EditText
+        android:id="@+id/signPwd"
+        android:textCursorDrawable="@color/dark_taupe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint = "@color/silver_two"
+        android:fontFamily="sans-serif-black"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/warm_grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/confirmPwd"
+        android:textColor="@color/silver_two"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/signPwd"
+        app:layout_constraintStart_toStartOf="@+id/signPwd"
+        app:layout_constraintTop_toBottomOf="@+id/signPwd" />
+
+    <EditText
+        android:id="@+id/signConfirm"
+        android:textCursorDrawable="@color/dark_taupe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint = "@color/silver_two"
+        android:fontFamily="sans-serif-black"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/warm_grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/BtnSignUp"
+        android:layout_width="330dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_signup"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

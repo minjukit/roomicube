@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "566276917742",
+    "firebase_url": "https://roomicube-acd96.firebaseio.com",
+    "project_id": "roomicube-acd96",
+    "storage_bucket": "roomicube-acd96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566276917742:android:bff033a46ac03d11faa6ff",
+        "android_client_info": {
+          "package_name": "com.example.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566276917742-e1bs5qjok5n9geaa6hko9nq6eoi5me84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMZB7BI3tI5lUd4P9T5yl--6eUWheqe-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566276917742-e1bs5qjok5n9geaa6hko9nq6eoi5me84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_closet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/colorWhite"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_closet">
+
+            <ImageView
+                android:id="@+id/ImageToday2"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+                android:src="@drawable/c_a" />
+
+            <ImageView
+                android:id="@+id/ImageToday11"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/c_b" />
+
+            <ImageView
+                android:id="@+id/ImageToday12"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/c_c" />
+
+            <ImageView
+                android:id="@+id/ImageToday23"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/c_d" />
+
+            <ImageView
+                android:id="@+id/ImageToday36"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/c_e" />
+
+            <ImageView
+                android:id="@+id/ImageToday366"
+                android:layout_width="@dimen/myPhoto3dW"
+                android:layout_height="@dimen/myPhoto3d"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_margin="@dimen/myPhoto3dPadding"
+                android:layout_marginTop="@dimen/pppading"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/c_f" />
+
+
+        </GridLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id = "@+id/myPageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mypage_icon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@drawable/roomibear" />
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/roomi"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_icon" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/roomimail"
+        android:textColor="@color/warm_grey_two"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <TextView
+        android:id="@+id/followerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="@string/k_follower"
+        android:textColor="@color/warm_grey_two"
+        app:layout_constraintEnd_toStartOf="@+id/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/followingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="@string/k_following"
+        android:textColor="@color/warm_grey_two"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="@string/dot"
+        android:textColor="@color/warm_grey_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="@string/_0"
+        android:textColor="@color/warm_grey_two"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/followerText"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="@string/_2"
+        android:textColor="@color/warm_grey_two"
+        app:layout_constraintStart_toEndOf="@+id/followingText"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followerText">
+
+
+        <ImageView
+            android:id="@+id/myPage_state"
+            android:layout_width="@dimen/myPage_4icon"
+            android:layout_height="@dimen/myPage_4icon"
+            android:layout_marginStart="@dimen/myPage_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/stringValue"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_a" />
+
+        <ImageView
+            android:id="@+id/myPage_list"
+            android:layout_width="@dimen/myPage_4icon"
+            android:layout_height="@dimen/myPage_4icon"
+            android:layout_weight="1"
+            android:contentDescription="@string/stringValue"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_b" />
+
+        <ImageView
+            android:id="@+id/myPage_room"
+            android:layout_width="@dimen/myPage_4icon"
+            android:layout_height="@dimen/myPage_4icon"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/stringValue"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_c" />
+
+        <ImageView
+            android:id="@+id/myPage_like"
+            android:layout_width="@dimen/myPage_4icon"
+            android:layout_height="@dimen/myPage_4icon"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/myPage_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/stringValue"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearMyPhoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="10"
+                android:fontFamily="@font/notosanscjkkr_black"
+                android:text="@string/my_photo"
+                android:textColor="@color/black_two"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/BtnMyPhoto"
+                android:layout_width="18dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/rightbutton"
+                android:contentDescription="@string/stringValue"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearTodayPhoto">
+
+            <ImageView
+                android:id="@+id/myphoto"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:padding="@dimen/myPhotoPadding"
+                android:contentDescription="@string/stringValue"
+
+                android:src="@drawable/m_a" />
+
+            <ImageView
+                android:id="@+id/myphoto11"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_b" />
+
+            <ImageView
+                android:id="@+id/myphoto12"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_c" />
+
+            <ImageView
+                android:id="@+id/myphoto23"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_d" />
+
+            <ImageView
+                android:id="@+id/myphoto36"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_e" />
+
+            <ImageView
+                android:id="@+id/myphoto366"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_f" />
+
+            <ImageView
+                android:id="@+id/myphoto365"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_marginTop="1dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_g" />
+            <ImageView
+                android:id="@+id/myphoto22"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_marginTop="1dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_h" />
+            <ImageView
+                android:id="@+id/myphoto32"
+                android:layout_width="@dimen/image_today"
+                android:layout_height="@dimen/image_today"
+                android:layout_marginTop="1dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:contentDescription="@string/stringValue"
+                android:padding="@dimen/myPhotoPadding"
+                android:src="@drawable/m_i" />
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

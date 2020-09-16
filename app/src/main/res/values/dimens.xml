@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="btn_margin">30dp</dimen>
+    <dimen name="btn_size">50dp</dimen>
+    <dimen name="btn_size2">60dp</dimen>
+    <dimen name="btn_size3">65dp</dimen>
+    <dimen name="image_today">137dp</dimen>
+    <dimen name="myPage_icon">120dp</dimen>
+    <dimen name="myPage_4icon">55dp</dimen>
+    <dimen name="myPage_margin">40dp</dimen>
+    <dimen name="bottom_navigation_icon_size">49dp</dimen>
+    <dimen name="myPhoto">205dp</dimen>
+    <dimen name="myPhotoPadding">3dp</dimen>
+    <dimen name="myPhoto3dW">201dp</dimen>
+    <dimen name="myPhoto3d">300dp</dimen>
+    <dimen name="myPhoto3dPadding">2dp</dimen>
+    <dimen name ="pppading">10dp</dimen>
+</resources>

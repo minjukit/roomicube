@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#6e6e6e</color>
+    <color name="colorGray2">#999999</color>
+    <color name="dark_taupe">#855950</color>
+    <color name="dark_taupe_two">#6d4f48</color>
+    <color name="dark_taupe_icon">#6d4f48</color>
+    <color name="greyish_brown">#3f3f3f</color>
+    <color name="greyish">#b1b1b1</color>
+    <color name="greyish_brown_two">#6f534e</color>
+    <color name="silver">#c9cbca</color>
+    <color name="pinkish_grey">#d5c7ba</color>
+    <color name="warm_grey">#8d8d8d</color>
+    <color name="silver_two">#b8bab9</color>
+    <color name="black">#000000</color>
+    <color name="warm_grey_two">#707070</color>
+    <color name="black_two">#2a2a2a</color>
+    <color name="white2">#dcdcdc</color>
+    <color name="navIcon">#cdcdcd</color>
+    <color name="greyish_brown_three">#565656</color>
+    <color name="greyish_brown_four">#3b2b27</color>
+</resources>

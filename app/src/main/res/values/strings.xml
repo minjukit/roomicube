@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RoomiCube</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="pwd">Password</string>
+    <string name="hint_pwd">Enter your password</string>
+    <string name="forgetPwd">Forgot Email/Password</string>
+    <string name="tSize">16sp</string>
+    <string name="btnSep">60dp</string>
+    <string name="marginS">30dp</string>
+    <string name="or">or</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="text_account">Don\'t have an account?</string>
+    <string name="action_settings">Settings</string>
+    <string name="today_photo">Today\'s Photo</string>
+    <string name="explore">Explore</string>
+    <string name="createAcc">Create Account</string>
+    <string name="fullName">Full Name</string>
+    <string name="confirmPwd">Confirm Password</string>
+    <string name="roomi">roomi</string>
+    <string name="stringValue">이미지가 열리지 않습니다</string>
+    <string name="home">홈</string>
+    <string name="checkList">체크리스트</string>
+    <string name="_3d">3D</string>
+    <string name="community">커뮤니티</string>
+    <string name="myPage">마이페이지</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="k_follower">팔로워</string>
+    <string name="_0">0</string>
+    <string name="k_following">팔로잉</string>
+    <string name="_2">2</string>
+    <string name="dot">·</string>
+    <string name="k_list">리스트</string>
+    <string name="k_myRoom">마이룸</string>
+    <string name="k_statement">명세서</string>
+    <string name="k_like">좋아요</string>
+    <string name="my_photo">My Photo</string>
+    <string name="k_photo">사진</string>
+    <string name="k_3d">3D 배치도</string>
+    <string name="_3d_arrangement">3D Arrangement</string>
+    <string name="k_underArrange">나만의 인테리어를 계획 후\n3D 공간에 실제로 배치해보세요</string>
+    //facebook
+    <string name="facebook_app_id">764144767655495</string>
+    <string name="fb_login_protocol_scheme">fb764144767655495</string>
+    //kakaoTalk
+    <string name="kakao_app_key">32b358b5ede81d337a3c00fb8f969eda</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="roomimail">roomi@google.com</string>
+</resources>
